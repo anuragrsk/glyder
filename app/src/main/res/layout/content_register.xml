@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:id="@+id/login_form"
+    tools:context="glyder.ind.retail.com.glyder.Register"
+    android:background="@color/backgroundScreen">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <!-- This FrameLayout insets its children based on system windows using
+             android:fitsSystemWindows. -->
+
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            >
+            <TextView android:id="@+id/fullscreen_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:paddingBottom="20dp"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textStyle="normal" android:textSize="40sp"
+                android:text="@string/registration"
+                android:gravity="center"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+
+                android:hint="@string/prompt_email_registration"
+                android:ems="10"
+                android:id="@+id/personEmail"
+
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:hint="First name"
+
+                    android:ems="10"
+                    android:id="@+id/firstName"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+
+                    android:layout_alignBottom="@+id/fullscreen_content_controls"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="5dp"
+                    android:capitalize="words"
+                    android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:hint="Last name"
+                    android:ems="10"
+
+                    android:id="@+id/lastName"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+
+                    android:layout_alignBottom="@+id/fullscreen_content_controls"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Phone"
+                android:ems="10"
+                android:layout_weight="1"
+                android:id="@+id/phone"
+                android:paddingLeft="10dp"
+                android:maxLength="10"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+
+                android:layout_alignBottom="@+id/fullscreen_content_controls"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/white" />
+</android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:ems="10"
+                android:id="@+id/password"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+
+
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:maxLength="4"
+                android:hint="Pin"
+                android:ems="10"
+                android:id="@+id/pin"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:numeric="integer"
+                android:password="true"
+                android:textColorHint="@color/white" /></android.support.design.widget.TextInputLayout>
+
+
+            <Button android:id="@+id/registrationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/registrantionbtn" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

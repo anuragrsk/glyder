@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/gplus"
+    android:paddingLeft="15dp"
+
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:id="@+id/imageIcon"
+    />
+<LinearLayout
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="15dp"
+    android:gravity="right|center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/product"
+        android:text="Coke"
+        android:textColor="@color/primary_text"
+        android:layout_gravity="right|center_vertical"
+        android:paddingRight="15dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/price"
+    android:text="$10.00"
+    android:textColor="@color/primary_text"
+        android:paddingRight="15dp"
+
+        android:layout_gravity="right|center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:gravity="center_vertical" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:background="@android:drawable/ic_delete"
+        android:tint="@color/colorAccent"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout></LinearLayout>
+</LinearLayout>

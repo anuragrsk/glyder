@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundScreen"
+    tools:context="glyder.ind.retail.com.glyder.SplashScreenActivity">
+
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/singIn"
+        style="?metaButtonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/primary_text"
+        android:background="@color/colorPrimaryDark"
+
+        android:text="@string/login" />
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/register"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:layout_margin="10dp"
+                android:textColor="@color/primary_text"
+                android:gravity="center"
+
+                android:layout_weight="1"
+                android:text="@string/registered" /></LinearLayout></LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|clip_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="360dp"
+                    android:layout_height="360dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/cart"
+                    android:layout_gravity="center_horizontal|clip_vertical"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/infoText"
+                android:textStyle="bold"
+                android:textSize="24dp"
+
+                android:textColor="@color/primary_text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/infoTextAccept"
+                android:textStyle="bold"
+                android:textSize="16dp"
+
+                android:textColor="@color/primary_text"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

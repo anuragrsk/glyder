@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundScreen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/top_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:id="@+id/LinearLayout11" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+        <LinearLayout android:orientation="vertical" android:id="@+id/addcardLayOut" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:weightSum="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/addcardLayOutForCardImages" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@+id/addCardLayOutId" android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="@color/normal" android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/topPad" android:layout_marginRight="@dimen/topPad" android:text="Add a new card"
+                    android:layout_marginTop="@dimen/pad12" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/addcardLayOutForCard" android:background="@drawable/bgcard1" android:paddingLeft="@dimen/pad20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_weight="1.07">
+                <LinearLayout android:orientation="vertical" android:id="@+id/addcardLayOutForCardImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/topPad15">
+                    <ImageView android:layout_gravity="right" android:id="@+id/imgVisaOrMaster" android:paddingRight="@dimen/topPad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/topPad" android:src="@drawable/iconvisamaster" android:contentDescription="Visa or master" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/addcardLayoutNumber"
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pad15">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/addcardLayoutNumber1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <EditText android:textSize="16.0sp" android:id="@+id/cardNumber1" android:background="@android:color/transparent" android:paddingLeft="@dimen/pad30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/ghosttextcard" android:maxLength="4" android:digits="1234567890" android:inputType="phone"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/bg_gray_dark">
+                            <requestFocus />
+                        </EditText>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/addcardLayoutNumber2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <EditText android:textSize="16.0sp" android:id="@+id/cardNumber2" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/ghosttextcard" android:maxLength="4" android:digits="1234567890" android:inputType="phone"
+                            android:textColorHint="@color/bg_gray_dark"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/addcardLayoutNumber3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <EditText android:textSize="16.0sp" android:id="@+id/cardNumber3" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/ghosttextcard" android:maxLength="4" android:digits="1234567890" android:inputType="phone"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/bg_gray_dark" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/addcardLayoutNumber4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <EditText android:textSize="16.0sp" android:id="@+id/cardNumber4" android:background="@android:color/transparent" android:paddingRight="@dimen/Pad8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/ghosttextcard" android:maxLength="4" android:digits="1234567890" android:inputType="phone"
+                            android:textColorHint="@color/bg_gray_dark"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/addcardLayoutDateYear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pad20" android:baselineAligned="false">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/addcardLayoutDateYearInner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" />
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/addcardLayoutDateYearInner1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0"
+                        android:layout_marginLeft="@dimen/Pad8">
+                        <EditText android:textSize="14.0dip" android:id="@+id/addCardMonth" android:background="@android:color/transparent" android:paddingLeft="@dimen/textPadLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="MM" android:maxLength="2" android:digits="1234567890" android:inputType="phone"
+                            android:textColorHint="@color/bg_gray_dark"
+                            android:textColor="@color/black" />
+                        <EditText android:textSize="14.0dip" android:id="@+id/addCardYear" android:background="@android:color/transparent" android:paddingLeft="@dimen/pad20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Pad6" android:hint="YY" android:maxLength="2" android:digits="1234567890" android:inputType="phone"
+                            android:textColorHint="@color/bg_gray_dark"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/topPad15">
+                    <TextView android:textStyle="bold" android:textColor="@color/white" android:id="@+id/addCardUserName" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="@color/normal" android:id="@+id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/topPad" android:text="Billing Address"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/topPad" android:layout_marginTop="@dimen/topPad" android:layout_marginRight="@dimen/topPad"
+                android:visibility="visible">
+                <EditText android:textSize="@dimen/font" android:id="@+id/cardAddressline1" android:background="@drawable/fld_reg_part2" android:paddingLeft="@dimen/topPad5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/topPad5" android:hint="Address Line1" android:inputType="textCapSentences"
+                    android:textColorHint="@color/bg_gray_dark"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+                <EditText android:textSize="@dimen/font" android:id="@+id/cardAddressline2" android:background="@drawable/fld_reg_part2" android:paddingLeft="@dimen/topPad5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/topPad5" android:hint="Address Line2" android:inputType="textCapSentences"
+                    android:visibility="gone" />
+                <EditText android:textSize="@dimen/font" android:layout_gravity="left" android:id="@+id/cardCity" android:background="@drawable/fld_reg_part2" android:paddingLeft="@dimen/topPad5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/topPad5" android:hint="City" android:inputType="textCapSentences"
+                    android:visibility="gone" />
+                <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:paddingTop="@dimen/topPad5" android:paddingBottom="@dimen/topPad" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                    android:visibility="gone">
+                    <Spinner android:entries="@array/state" android:layout_gravity="center|left" android:id="@+id/cardState" android:background="@drawable/dropdown_creditcard" android:paddingLeft="@dimen/topPad5" android:paddingRight="@dimen/topPad5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:prompt="@string/state_s" android:layout_weight="1.0" />
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/topPad5" android:paddingBottom="@dimen/topPad" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <EditText android:textSize="@dimen/font" android:layout_gravity="center|left" android:id="@+id/cardZip" android:background="@drawable/fld_reg_part1" android:paddingLeft="@dimen/topPad5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Zip" android:maxLength="5" android:inputType="phone" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/topPad">
+                <Button android:id="@+id/addCardBtn" android:paddingLeft="@dimen/topPad" android:paddingRight="@dimen/topPad" android:layout_width="match_parent" android:layout_height="wrap_content"  android:contentDescription="State"
+                    android:textColor="@color/white"
+                    android:text="Add Card"
+                    android:background="@color/blue"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="@dimen/topPad"
+                    android:layout_marginRight="@dimen/topPad" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
